@@ -11,7 +11,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
@@ -25,9 +25,16 @@ a:hover {
 }
 
 .header {
-    background-color: rgb(111, 137, 141);
+    background-color: rgb(94, 37, 37);
     padding: 9px;
-    border-bottom: solid 2px #333;
+    border-bottom: solid 2px rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.societe-name {
+    color: rgb(163, 132, 88);
 }
 
 .logo {
@@ -38,20 +45,21 @@ a:hover {
 }
 
 .nav {
-    color: #333;
+    color: rgb(94, 37, 37);
 }
 
 .hero {
-    background-color: rgb(183, 199, 202);
+    background-color: rgba(157, 252, 255, 0.15);
     align-items: center;
     text-align: center;
     padding: 250px;
     display: flex;
+    border-bottom: teal 1px solid;
 }
 
 .hero h1 {
     font-size: 70px;
-    color: #333;
+    color: rgb(94, 37, 37);
 }
 
 .hero p {
@@ -61,6 +69,7 @@ a:hover {
 
 .salons {
     padding: 80px 0;
+    background-color: #ffffff;
 }
 
 .salons h2 {
@@ -76,16 +85,16 @@ a:hover {
 }
 
 .salon-card {
-    background-color: aliceblue;
+    background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgb(111, 137, 141);
+    box-shadow: 0 10px 30px rgb(94, 37, 37);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .salon-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 212, 219, 0.15);
 }
 
 .salon-card img {
@@ -105,9 +114,10 @@ a:hover {
 }
 
 .about {
-    background-color: rgb(183, 199, 202);
+    background-color: rgba(157, 252, 255, 0.15);
     padding: 80px 0;
     text-align: center;
+    border: teal 1px dashed;
 }
 
 .about h2 {
@@ -135,13 +145,13 @@ a:hover {
 }
 
 .contact-number {
-    background-color: rgb(183, 199, 202);
-    border: 1px solid #333;
+    background-color: rgba(157, 252, 255, 0.15);
+    border: 1px dashed teal;
 }
 
 .footer {
-    background-color: rgb(111, 137, 141);
-    color: #333;
+    background-color: rgb(75, 33, 33);
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
     font-size: 12px;
@@ -156,4 +166,27 @@ a:hover {
         margin-left: 10;
         font-size: 14px
     }
+}
+
+/*salon detaylari */
+
+.salon-detail h1 {
+    text-align: center;
+    margin-top: 120px;
+    color: rgba(58, 166, 170);
+    font-size: 40px;
+}
+
+.salon-detail-2 h1 {
+    text-align: center;
+    margin-top: 120px;
+    color: rgb(94, 37, 37);
+    font-size: 40px;
+}
+
+.salon-detail-3 h1 {
+    text-align: center;
+    margin-top: 120px;
+    color: rgb(125, 119, 156);
+    font-size: 40px;
 }
