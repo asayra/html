@@ -6,6 +6,30 @@
     <title>Wedding Hall</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hero = document.querySelector(".hero");
+
+    const images = [
+      "societe-events3.jpg",
+      "societe-class.jpg",
+      "museum2.jpg",
+      "class2.jpg"
+    ];
+
+    let index = 0;
+
+    function changeHeroBackground() {
+      hero.style.backgroundImage = `url('${images[index]}')`;
+      index = (index + 1) % images.length;
+    }
+
+    changeHeroBackground();
+    setInterval(changeHeroBackground, 3000);
+  });
+</script>
+
 <body>
     <header class="header">
         <div class="container">
@@ -20,28 +44,35 @@
     </header>
 
     <section id="home" class="hero">
-        <div class="container">
-           <h1>Welcome to <section class="societe-name">Societe</section> Wedding Halls</h1>
-           <p>Discover the perfect venue for your special day at Societe wedding halls.</p>
-        </div>
-    </section>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>
+      Welcome to <span class="societe-name">Societe</span> Wedding Halls
+    </h1>
+    <p>Discover the perfect venue for your special day.</p>
+  </div>
+</section>
 
     <section id="salons" class="salons">
         <div class="salon-grid">
 
             <a href="salon1.html" class="salon-card">
+                <img src="societe-events3.jpg" alt="Societe Events">
                 <div class="salon-info">
                     <h3>Societe Events</h3>
                 </div>
             </a>
 
             <a href="salon2.html" class="salon-card">
+                <img src="societe-museum2.jpg" alt="Societe Museum">
                 <div class="salon-info">
                     <h3>Societe Museum</h3>
                 </div>
             </a>
 
             <a href="salon3.html" class="salon-card">
+                <img src="societe-class.jpg" alt="Societe Class">
                 <div class="salon-info">
                     <h3>Societe Class</h3>
                 </div>
